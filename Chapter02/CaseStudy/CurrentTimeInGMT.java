@@ -20,7 +20,8 @@ public class CurrentTimeInGMT {
         //Hours
         if (currentHour < 10) {
             System.out.println("The current time is: 0" + currentHour + ":" + currentMinutes + ":" + currentSeconds);
-        } else {
+        }
+        else {
             System.out.println("The current time is: " + currentHour + ":" + currentMinutes + ":" + currentSeconds);
         }
         //Minutes
@@ -33,7 +34,8 @@ public class CurrentTimeInGMT {
         //Seconds
         if (currentSeconds < 10) {
             System.out.println("The current time is: " + currentHour + ":" + currentMinutes + ":0" + currentSeconds);
-        } else {
+        }
+        else {
             System.out.println("The current time is: " + currentHour + ":" + currentMinutes + ":" + currentSeconds);
         }
 
