@@ -1,11 +1,11 @@
-package Chapter2.CaseStudy
+package Chapter02.CaseStudy
 
 public class CurrentTimeInGMT {
 
     public static void main(String[] args) {
 /* My version solves the formatting problem, displaying the time in the format (00:00:00), using only logic and no functions.
  At that time, I hadn’t learned about functions and methods yet. */
- 
+
         public static void main(String[] args) {
 
             // 1. Defining the variables for the total time.
