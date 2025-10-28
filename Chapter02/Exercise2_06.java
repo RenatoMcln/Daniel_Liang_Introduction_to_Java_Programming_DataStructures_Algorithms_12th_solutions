@@ -8,8 +8,7 @@ public class Exercise2_06 {
         Scanner input = new Scanner(System.in);
 
         //Prompt to user for the input
-        System.out.print("Enter a number between 0 and 99999" +
-                ": ");
+        System.out.print("Enter a number between 0 and 9999: ");
         short number = input.nextShort();
 
         /*Define the required variables
