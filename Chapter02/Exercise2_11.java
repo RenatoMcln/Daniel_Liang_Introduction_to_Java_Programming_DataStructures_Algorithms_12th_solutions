@@ -18,12 +18,12 @@ public class Exercise2_11 {
         final int SECONDS_IN_A_YEAR = SECONDS_IN_A_DAY * DAYS_IN_A_YEAR;
 
         //Daily change of population
-        double births = SECONDS_IN_A_YEAR / 7.0;
-        double deaths = SECONDS_IN_A_YEAR / 13.0;
+        double births =  SECONDS_IN_A_YEAR / 7.0;
+        double deaths =  SECONDS_IN_A_YEAR / 13.0;
         double newImmigrants = SECONDS_IN_A_YEAR / 45.0;
 
         //calculating the future population
-        int futurePopulation = (int) ((births - deaths + newImmigrants) * years + currentPopulation);
+        long futurePopulation = (long) ((births * years) - (deaths * years) + (newImmigrants * years)) + currentPopulation;
 
         //Display the result to the user
         System.out.println("The current population is: " + currentPopulation);
