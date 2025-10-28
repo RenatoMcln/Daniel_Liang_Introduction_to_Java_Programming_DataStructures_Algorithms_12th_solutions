@@ -16,7 +16,7 @@ public class Exercise2_12 {
         double acceleration = input.nextDouble();
 
         //Calculating the required variables
-        double length = (int)(1000 * (speed * speed) / (2 * acceleration) + 0.5) / 1000.0;
+        double length = (int)(1000 * (speed * speed) / (2 * acceleration) + 0.5) / 1000.0;//rouding to 3 decimal places of precision
 
         //Display the result to the user
         System.out.println("The minimum runway length for this airplane is " + length + " meters");
