@@ -16,7 +16,7 @@ public class Exercise2_01 {
         double fahrenheit = celsius * (9.0 / 5.0)  + 32;
 
         //Display the degrees in fahrenheit
-        System.out.println("Degrees in Fahrenheit: " + fahrenheit);
+        System.out.println(celsius + " degrees Celsius is " + fahrenheit + " degrees Fahrenheit");
 
     }
 }
