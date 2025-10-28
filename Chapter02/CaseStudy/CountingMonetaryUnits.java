@@ -1,7 +1,7 @@
 package Chapter02.CaseStudy
 
 import java.util.Scanner;
-
+//In this version of the converter, I changed the input to two values to solve the precision problem.
 public class CountingMonetaryUnits {
 
     public static void main(String[] args) {
