@@ -70,9 +70,7 @@ public class Exercise3_07 {
         }
 
         // Nickels are never greater than 1
-        if (nickels > 1) {
-            System.out.println("Nickels: " + nickels + " Nickels");
-        } else if (nickels == 1) {
+        if (nickels == 1) {
             System.out.println("Nickels: " + nickels + " Nickel");
         }
 
