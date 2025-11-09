@@ -17,9 +17,10 @@ public class Exercise3_01 {
         System.out.print("Enter c: ");
         double c = input.nextDouble();
 
-        // Calculating the discriminant and defining the number of solutions.
+        // Calculating the discriminant and defining the number of solutions
         double discriminant = b * b - 4 * a * c;
 
+        // Defining roots
         double root1 = (int) ((-b + Math.pow(discriminant, 0.5)) / (2 * a) * 100000) / 100000.0;
         double root2 = (int) ((-b - Math.pow(discriminant, 0.5)) / (2 * a) * 100000) / 100000.0;
 
