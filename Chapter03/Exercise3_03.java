@@ -27,11 +27,8 @@ public class Exercise3_03 {
         double solutionX = (e * d - b * f) / (a * d - b * c);
         double solutionY = (a * f - e * c) / (a * d - b * c);
 
-        if ((a * d - b * c) != 0) {
-            System.out.println("x is " + solutionX + " and y is " + solutionY);
-        } else {
-            System.out.println("The equation has no solution");
-        }
+        //Display the result to the user
+        System.out.println( ((a * d - b * c) != 0) ? "x is " + solutionX + " and y is " + solutionY : "The equation has no solution" );
 
     }
 }
