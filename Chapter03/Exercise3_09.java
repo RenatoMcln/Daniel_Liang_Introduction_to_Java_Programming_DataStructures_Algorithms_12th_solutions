@@ -9,7 +9,16 @@ public class Exercise3_09 {
 
         // Prompt the user for the input
         System.out.print("Enter the first 9 digits of an ISBN as integer: ");
-        long isbn = input.nextLong();
+        String stringIsbn = input.nextLine();
+        stringIsbn = stringIsbn.trim(); // Remove blank spaces
+
+        if (stringIsbn.length() != 9) {
+            System.out.println("Please enter exactly the first 9 digits of an ISBN number.");
+            System.exit(1);
+        }
+
+        // Convert string to long
+        long isbn = Long.parseLong(stringIsbn);
 
         // Defining the single digits
         byte d9 = (byte) (isbn % 10);
