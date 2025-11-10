@@ -1,8 +1,8 @@
-package Chapter03.CaseStudy;
+package Chapter03;
 
 import java.util.Scanner;
 
-public class ComputeTax {
+public class Exercise3_13 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
