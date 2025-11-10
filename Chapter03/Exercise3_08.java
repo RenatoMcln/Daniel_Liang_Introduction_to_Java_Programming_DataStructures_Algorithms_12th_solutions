@@ -22,35 +22,28 @@ public class Exercise3_08 {
         System.out.print("Enter the third number: ");
         int number3 = input.nextInt();
 
-        // Defining conditions
-        boolean condition1 = number1 >= number2 && number1 >= number3;
-        boolean condition2 = number2 >= number1 && number2 >= number3;
-        boolean condition3 = number3 >= number1 && number3 >= number2;
 
-        // Display the three numbers to the user in increasing order
-        if (condition1 && number2 >= number3) {
-            System.out.println(number3 + " / " + number2 + " / " + number1);
+        // Sorting the numbers in increasing order
+        if (number1 > number2) {
+            int tempNumber1 = number1;
+            number1 = number2;
+            number2 = tempNumber1;
         }
 
-        if (condition1 && number2 < number3) {
-            System.out.println(number2 + " / " + number3 + " / " + number1);
+        if (number2 > number3) {
+            int tempNumber2 = number2;
+            number2 = number3;
+            number3 = tempNumber2;
         }
 
-        if (condition2 && number1 >= number3) {
-            System.out.println(number3 + " / " + number1 + " / " + number2);
+        if (number1 > number2) {
+            int tempNumber1 = number1;
+            number1 = number2;
+            number2 = tempNumber1;
         }
 
-        if (condition2 && number1 < number3) {
-            System.out.println(number1 + " / " + number3 + " / " + number2);
-        }
-
-        if (condition3 && number1 >= number2) {
-            System.out.println(number2 + " / " + number1 + " / " + number3);
-        }
-
-        if (condition3 && number1 < number2) {
-            System.out.println(number1 + " / " + number2 + " / " + number3);
-        }
+        // Display the numbers sorted
+        System.out.println(number1 + " " + number2 + " " + number3);
 
     }
 }
