@@ -74,14 +74,10 @@ public class Exercise3_21 {
 
 
         // Convert months 1 or 2 to 13 or 14 and go back one year
-        if (month == 1) {
-            month = 13;
-            year--;
-        } else if (month == 2) {
-            month = 14;
+        if (month == 1 || month == 2) {
+            month += 12;
             year--;
         }
-
 
         // Defining the required variables
         int j = year / 100;
