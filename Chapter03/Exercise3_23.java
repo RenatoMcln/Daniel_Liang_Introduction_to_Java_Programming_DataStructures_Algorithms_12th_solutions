@@ -31,7 +31,7 @@ public class Exercise3_23 {
         if (distanceWidth > 5 || distanceHeight > 2.5) {
             System.out.println("\nPoint (" + x + ", " + y + ") is not in the rectangle.");
         } else {
-            System.out.println("\nPoint (" + x + ", " + y + ") is in the circle.");
+            System.out.println("\nPoint (" + x + ", " + y + ") is in the rectangle.");
         }
 
     }
