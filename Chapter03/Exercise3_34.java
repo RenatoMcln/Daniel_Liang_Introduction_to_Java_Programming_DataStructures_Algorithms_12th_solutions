@@ -2,7 +2,7 @@ package Chapter03;
 
 import java.util.Scanner;
 
-public class Exercise3_32 {
+public class Exercise3_34 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -19,13 +19,26 @@ public class Exercise3_32 {
         // Checking p2's position
         double position = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
 
+        // x1 and y1 are always greater than x0 and y0
+        if (y0 > y1) {
+            double tempY0 = y0;
+            y0 = y1;
+            y1 = tempY0;
+        }
+
+        if (x0 > x1) {
+            double tempX0 = x0;
+            x0 = x1;
+            x1 = tempX0;
+        }
+
         // Display the result to the user
-        if (position > 0) {
-            System.out.println("p2 is on the left side of the line");
-        } else if (position == 0) {
-            System.out.println("p2 is on the same line");
+        if ( position == 0 && (y2 <= y1 && y2 >= y0 && x2 >= x0 && x2 <= x1) ) {
+            System.out.println("(" + x2 + ", " + y2 + ") is on the line segment from " +
+                    "(" + x0 + ", " + y0 + ") to (" + x1 + ", " + y1 + ")");
         } else {
-            System.out.println("p2 is on the right side of the line");
+            System.out.println("(" + x2 + ", " + y2 + ") is not on the line segment from " +
+                    "(" + x0 + ", " + y0 + ") to (" + x1 + ", " + y1 + ")");
         }
 
     }
