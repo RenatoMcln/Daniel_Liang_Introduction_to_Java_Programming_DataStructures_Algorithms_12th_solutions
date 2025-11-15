@@ -13,9 +13,9 @@ public class Exercise3_31 {
 
         // Prompt the user for the second input
         System.out.print("Enter 0 to convert dollars to RMB or 1 to convert RMB to dollars: ");
-        byte changeModality = input.nextByte();
+        byte exchangeModality = input.nextByte();
 
-        if (changeModality != 0 && changeModality != 1) {
+        if (exchangeModality != 0 && exchangeModality != 1) {
             System.out.println("Invalid choice! Please enter 0 or 1.");
             System.exit(1);
         }
@@ -25,7 +25,7 @@ public class Exercise3_31 {
         double rmb;
 
         // Execute the exchange and display the result to the user
-        if (changeModality == 0) {
+        if (exchangeModality == 0) {
             System.out.print("Enter the dollar amount: ");
             dollars = input.nextDouble();
             rmb = (int) (dollars * rate * 100 + 0.5) / 100.0;
