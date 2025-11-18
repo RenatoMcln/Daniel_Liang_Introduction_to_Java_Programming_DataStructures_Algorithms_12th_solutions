@@ -38,6 +38,7 @@ public class ComputeAngles {
         angleA = Math.round(angleA * 100) / 100.0;
         angleB = Math.round(angleB * 100) / 100.0;
         angleC = Math.round(angleC * 100) / 100.0;
+
         
         // 6. Display the result to the user
         System.out.println("The three angles are: A = " + angleA + ", B = " + angleB + ", and C = " + angleC + ".");
