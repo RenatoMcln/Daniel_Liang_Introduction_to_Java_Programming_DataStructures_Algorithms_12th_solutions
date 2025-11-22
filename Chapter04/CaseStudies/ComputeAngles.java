@@ -44,4 +44,5 @@ public class ComputeAngles {
         System.out.println("The three angles are: A = " + angleA + ", B = " + angleB + ", and C = " + angleC + ".");
 
     }
+
 }
